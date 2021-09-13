@@ -1,24 +1,86 @@
-/* текст основного текста #757575 */
-/* вторичный цвет текста #212121  */
-/* белый #FFFFFF */
-/* черный #000000 */
-/* акцент #2196F3 */
-/* цвет контактов в футере  #FFFFFF99 */
+/* primary-text-color #757575 */
+/* secondary-text-color #212121  */
+/* white-colo #FFFFFF */
+/* black-color #000000 */
+/* accent-color #2196F3 */
+/* address-color  rgba(255, 255, 255, 0.6); */
 
-/* Страница "Студия" */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --accent-color: #2196f3;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --primary-bgc-color: #ffffff;
+}
+
+/* Main page */
+
 body {
-    background-color: #FFFFFF;
-    color: #757575;
+  background-color: var(--primary-bgc-color);
+  color: var(--primary-text-color);
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
+/* Logo header */
 .logo {
-    color: #000000;
+  color: var(--accent-color);
 }
 
-.logo-part {
-    color: #2196F3;
+.logo-studio {
+  color: var(--black-color);
 }
+
+/* Site-nav */
+.site-nav .link {
+  color: var(--secondary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--white-color);
+  background-color: #000000;
+}
+
+/* Button */
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* Section */
+.section-title {
+  color: var(--secondary-text-color);
+}
+
+/* Features */
+.features .title {
+  color: var(--secondary-text-color);
+}
+
+/* About */
+
+/* Team */
+.team .title {
+  color: var(--secondary-text-color);
+}
+
+/*Logo footer */
+footer .logo-studio {
+  color: var(--white-color);
+  background: #000000;
+}
+
+/* Address */
