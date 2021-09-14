@@ -14,7 +14,7 @@
   --address-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Index.html page */
+/* index.html page */
 
 body {
   background-color: var(--primary-bgc-color);
@@ -80,9 +80,12 @@ body {
 }
 
 /* Hero */
+.hero {
+  background-color: #2f303a;
+}
+
 .hero-title {
   color: var(--white-color);
-  background-color: #000000;
 
   font-weight: 900;
   font-size: 44px;
@@ -124,12 +127,10 @@ body {
 
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .features .text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -146,15 +147,15 @@ body {
 }
 
 /* Footer */
-
+.footer {
+  background-color: #2f303a;
+}
 /*Logo footer */
 footer .logo-studio {
   color: var(--white-color);
-  background: #000000;
 }
 
 .team .text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -162,23 +163,49 @@ footer .logo-studio {
 /* Address */
 .address .link {
   color: var(--address-color);
-  background: #000;
 
- font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-text-decoration: none;
-  }
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
 
-  .address .location {
-    color: var(--white-color);
-  }
+.address .location {
+  color: var(--white-color);
+}
 
-  .address .link:hover,
-  .address .link:focus {
-    color: var(--accent-color);
-  }
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
 
+/* portfolio.html page */
 
+.filter .btn {
+  color: var(--secondary-text-color);
+  background-color: #f5f4fa;
 
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter .btn-secondary {
+  background-color: var(--accent-color);
+}
+
+.projects .title {
+  color: var(--secondary-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects .text {
+  font-size: 16px;
+  line-height: 1.87;
+}
